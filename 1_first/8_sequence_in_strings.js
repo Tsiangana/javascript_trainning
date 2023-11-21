@@ -41,4 +41,7 @@
     var firstName = "Pedro";
     var lastName = " Zau";
     firstName += lastName;
-    console.log(firstName);
+    // console.log(firstName);
+
+
+    // Find Length of String
