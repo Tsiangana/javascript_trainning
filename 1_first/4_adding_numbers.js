@@ -26,6 +26,6 @@
     var myDecimal = 0.009;
 
     // Multiply Decimals
-    var product = 2.0 * 2.5;
+    var product = 3.0 * 2.5;
     
     console.log(product)
