@@ -45,3 +45,48 @@
 
 
     // Find Length of String
+    var myFirstNameLength = 0;
+    var myFirstName = 'Ada';
+
+    myFirstNameLength = myFirstName.length;
+    //console.log(myFirstNameLength);
+
+
+    // Bracket Notation to find first character in String
+    var oneFirstLetterOfFirstName = '';
+    var oneFirstName = 'Ada';
+
+    oneFirstLetterOfFirstName = oneFirstName[0];
+    //console.log(oneFirstLetterOfFirstName);
+
+
+    // String Immutability 
+    var oneMyStr = 'Eliseu zau';
+
+    // oneMyStr[0] = 'H';  <-- DESSE JEITO NAO PODE MUDAR, OU SEJA NAO PODEMOS MUDAR UMA LETRA DE UMA STRING
+    // oneMyStr = 'Pedro zau'; <-- DESSE JEITO SIM PODE MUDAR
+
+
+
+
+    // Bracket Notation to Find Nth Character in String
+    var twoFirstName = 'Ada';
+    var secondLetterOfFirstName = twoFirstName[1];
+
+    
+    
+    // Bracket Notation to find Last character in string
+    var thirdFirstName = 'Ada';
+    var lastLetterOfFirstName = thirdFirstName[thirdFirstName.length - 1]
+    // console.log(lastLetterOfFirstName);
+
+
+
+    // Bracket Notation to Find Nth-to-Last Character in String
+    var fourFirstName = 'Adadwewe';
+    var fourToLastLetterOfFirstName = fourFirstName[fourFirstName.length - 3];
+    // console.log(fourToLastLetterOfFirstName)
+
+
+
+
