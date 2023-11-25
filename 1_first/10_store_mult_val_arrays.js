@@ -37,7 +37,29 @@
 
 
     // Manipulate Arrays with pop()
+    var popOurArray = [1,2,3];
+    var removedFromOurArray = popOurArray.pop();
+    // removedFromOurArray now equals 3, and popOurArray now equals [1,2]
+
+    // Testing
+    var popMyArray = [["John", 23], ["cat",2]];
+
+    var TestingRemovedFromMyArray = popMyArray.pop();
 
 
 
-    // console.log(pushOurArray)
+    // Manipulate Arrays with shift()
+    var shiftOurArray = ["john", "J", ["cat"]];
+    var shiftRemovedFromArray = shiftOurArray.shift();
+
+
+
+    // Manipulate Arrays with unshift()
+    var unshiftOurArray = ["Stimpson", "J", "cat"];
+    // --> unshiftOurArray.shift(); // unshiftOurArray now equals ["J", "cat"];
+    unshiftOurArray.unshift("Happy");
+    // unshiftOurArray now equals ["Happy", "J", "cat"];
+
+
+
+    // console.log(unshiftOurArray)
