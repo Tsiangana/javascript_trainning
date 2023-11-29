@@ -181,3 +181,99 @@
 
 
     // Comparisons with the Logical Or Operator
+    function testLogicalOr(val) {
+        // Only change code below this line
+
+        if (val < 10 || val > 20){
+            return "Outside";
+        }
+
+        // Only change values here
+        return "Inside";
+    }
+
+    // console.log(testLogicalOr());
+
+
+
+    // Else Statements
+    function testElse(val) {
+        var result = "";
+        // Only change code below this line
+
+        if (val > 5) {
+            result = "Bigger than 5";
+        }
+        else {
+            result = "5 or smaller";
+        }
+
+        // Only change code above this line
+        return result;
+    }
+
+
+
+    // Else If Statements
+    function testElseIf(val) {
+        if (val > 10) {
+            return "Greater than 10";
+        }
+        else if (val < 5) {
+            return "Smaller than 5";
+        }
+        else{
+            return "Between 5 and 10";
+        }
+
+        
+    }
+
+    // Change this values to test
+    //console.log(testElseIf(5));
+
+
+
+    // Logical Order in If Else Statements
+    function orderMyLogic(val) {
+        if (val < 5) {
+            return "Less than 5";
+        }else if (val < 10) {
+            return "Less than 10";
+        }else{
+            return "Greater than Or Equal to 10";
+        }
+    }
+
+
+
+    //  Chaining If Else Statement 
+    function testSize(num) {
+        if (num < 5) {
+            return "Tiny";
+        }else if (num < 10) {
+            return "Small";
+        }else if (num < 15) {
+            return "Medium";
+        }else if (num < 20) {
+            return "Large";
+        }else if (num >= 20) {
+            return "Huge"
+        }else{
+            return "Change Me"
+        }
+        
+    }
+
+    console.log(testSize(19));
+
+    /*
+    Write chained if/else if statement to fullfill the following conditions:
+
+    num < 5 - return "Tiny"
+    num < 10 - return "Small"
+    num < 15 - return "Medium"
+    num < 20 - return "Large"
+    num >= 20 - return "Huge"
+    */
+
