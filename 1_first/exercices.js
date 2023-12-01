@@ -25,7 +25,7 @@
     }
 
     function segundoSemestre(mediaFinal2) {
-        nota1 = 16; nota2 = 12; nota3 = 10;
+        nota1 = 2; nota2 = 5; nota3 = 2;
         mediaFinal2 = (nota1 + nota2 + nota3)/3;
         //return mediaFinal;
 
@@ -41,7 +41,7 @@
     }
 
     function terceiroSemestre(mediaFinal3) {
-        nota1 = 19; nota2 = 20; nota3 = 4;
+        nota1 = 10; nota2 = 15; nota3 = 4;
         mediaFinal3 = (nota1 + nota2 + nota3)/3;
         //return mediaFinal;
 
@@ -62,17 +62,43 @@
     terceiroSemestre();
 
     function mediaFinalDoAno() {
-        classificacaoFinal[1];
-        classificacaoFinal1[1];
-        classificacaoFinal2[1];
+        trimestreOne = classificacaoFinal[1];
+        trimestreTwo = classificacaoFinal1[1];
+        trimestreThree = classificacaoFinal2[1];
 
-        if (condition) {
-            
-        }if (condition) {
-            
-        } else {
-            
+        var mensagem = "Passaste de ano, Parabens";
+        var ligacao = "Reprovaste de ano, tenta no proximo ano...";
+        var texto = "O seu caso ainda esta sendo avaliado, tente mais tarde...";
+
+        if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Apto com sucesso") {
+            return mensage;
         }
+        else if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Reprovado") {
+            return mensage;
+        }
+        else if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Reprovado" && trimestreThree == "Apto com sucesso") {
+            return mensage;
+        }
+        else if (trimestreOne == "Reprovado" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Apto com sucesso") {
+            return mensage;
+        }
+        else if (trimestreOne == "Reprovado" && trimestreTwo == "Reprovado" && trimestreThree == "Apto com sucesso") {
+            return ligacao;
+        }
+        else if (trimestreOne == "Reprovado" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Reprovado") {
+            return ligacao;
+        }
+        else if (trimestreOne == "Reprovado" && trimestreTwo == "Reprovado" && trimestreThree == "Reprovado") {
+            return ligacao;
+        }
+        else if (trimestreOne == "Reprovado" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Reprovado") {
+            return ligacao;
+        }
+        else if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Reprovado" && trimestreThree == "Reprovado") {
+            return ligacao;
+        }else {
+            return texto;
+       }
     }
 
-    mediaFinalDoAno()
+    console.log(mediaFinalDoAno());
