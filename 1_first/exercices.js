@@ -71,16 +71,16 @@
         var texto = "O seu caso ainda esta sendo avaliado, tente mais tarde...";
 
         if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Apto com sucesso") {
-            return mensage;
+            return mensagem;
         }
         else if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Reprovado") {
-            return mensage;
+            return mensagem;
         }
         else if (trimestreOne == "Apto com sucesso" && trimestreTwo == "Reprovado" && trimestreThree == "Apto com sucesso") {
-            return mensage;
+            return mensagem;
         }
         else if (trimestreOne == "Reprovado" && trimestreTwo == "Apto com sucesso" && trimestreThree == "Apto com sucesso") {
-            return mensage;
+            return mensagem;
         }
         else if (trimestreOne == "Reprovado" && trimestreTwo == "Reprovado" && trimestreThree == "Apto com sucesso") {
             return ligacao;

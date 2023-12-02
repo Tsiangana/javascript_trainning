@@ -116,3 +116,73 @@
 
 
     // Returning Boolean Values from Functions
+    function isLess(a, b) {
+        // Fix this code
+        /*if (a < b) {
+            return true;
+        }else {
+            return false;
+        }*/  //In stade of these you can do this:
+
+        return a < b;
+        
+    }
+
+    // Change these values to test
+    // console.log(isLess(10, 15));
+
+
+
+    // Returning Early Pattern from Functions
+    // Setup
+    function abTest(a, b) {
+        // Only change code below this line
+
+        if (a < 0 || b < 0) { // isso serve para demostrar que podemos sair da funcao quando quisermos
+            return undefined;
+        }
+
+        // Only change code above this line
+
+        return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+        
+    }
+
+    // Change these values to test
+    // console.log(abTest(-2, 15));
+
+
+
+    // Counting Cards
+    var count = 0;
+
+    function cc(card) {
+        switch (card) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                count++;
+                break;
+            case 10:
+            case "J":
+            case "Q":
+            case "K":
+            case "A":
+                count--;
+                break;
+        }
+
+        var holdbet = "Hold";
+        if (count > 0) {
+            holdbet = 'Bet';
+        }
+
+
+        return count + " " + holdbet;
+    }
+
+
+    cc(2); cc(3); cc(7); cc('K'); cc('A');
+    console.log(cc('1'));
