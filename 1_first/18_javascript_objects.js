@@ -112,6 +112,149 @@
 
 
     // Using Objects for Lookups
+    // Setup
+    function phoneticLookup(val) {
+        var result = "";
+
+        // Only change code below this line
+        /*switch (val) {
+            case "alpha":
+                result = "Adams";
+                break;
+            case "bravo":
+                result = "Boston";
+                break;
+            case "charlie":
+                result = "Chicago";
+                break;
+            case "delta":
+                result = "Denver";
+                break;
+            case "echo":
+                result = "Elicha";
+                break;
+            case "foxtrot":
+                result = "Frankie";
+                break;
+        }*/ // Vc pode substituir, toda essa instrucao em switch por um objecto, veja a baixo
+
+        var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Elicha",
+        "foxtrot": "Frankie"
+    };
+    result = lookup[val];
+    // Only change code above this line
+    return result;
+    } 
+
+    // Change values here to test
+    // console.log(phoneticLookup("foxtrot"));
+
+
+
+    // Testing Objects for Properties
+    // Setup
+    var mYobj = {
+        gift: "pony",
+        pet: "kitten",
+        bed: "sleigh"
+    }
+
+    function checkObj(checkProp) {
+        // Your code here
+        if (mYobj.hasOwnProperty(checkProp)) {
+            return mYobj[checkProp];
+        } else{
+            return "Not found";
+        }
+
+    }
+
+    // Test your code by modifying these values
+    // console.log(checkObj("tille"));
+
+
+
+    // Manipulating Complex Objects
+    var myMusic = [
+        {
+            "artist": "Billy Joel",
+            "tittle": "Piano Man",
+            "release_year": 1973,
+            "formats": [
+                "CD",
+                "8T",
+                "LP"
+            ],
+            "gold": true
+        },
+        // Add record here
+        {
+            "artist": "Eliseu zau",
+            "tittle": "Memories",
+            "release_year": 2023,
+            "formats": [
+                "Youtube Video"
+            ]
+        }
+    ];
+
+
+
+    // Accessing Nested Objects
+    // Setup
+    var myStorange = {
+        "car": {
+            "inside": {
+                "glove box": "maps",
+                "passenger seat": "crumbs"
+            },
+            "outside": {
+                "trunk": "jack"
+            }
+        }
+    };
+
+    var gloveBoxContents = myStorange.car.inside["glove box"]; // Change this line
+    // console.log(gloveBoxContents);
+
+
+
+    // Accessing Nested Arrays
+    // Setup
+    var myPlants = [
+        {
+            type: "flowers",
+            list: [
+                "rose",
+                "tulip",
+                "dandelion"
+            ]
+        },
+        {
+            type: "trees",
+            list: [
+                "fir",
+                "pine",
+                "birch"
+            ] 
+        }
+    ];
+
+    // Only change code below this line
+
+    var secondTree = myPlants[1].list[2]; // Change this line
+    // console.log(secondTree);
+
+
+
+    // Record Collection
+    
+    
 
 
 
