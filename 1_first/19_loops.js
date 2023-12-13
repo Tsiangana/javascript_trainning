@@ -249,6 +249,178 @@
 
 
     // Compare Scope of the var and let Keywords
+    function checkScope() {
+        "use strict";
+        let i = "function scope";
+        if (true) {
+            let i = "block scope";
+            console.log("Block scope i is: ", i);
+        }
+        console.log("function scope i is: ", i);
+        return i;
+    }
+
+    // checkScope();
+
+
+
+
+
+    // Declare a read-only variable with the const Keyword
+    function printManyTimes(str) {
+        "use strict";
+
+        const SENTENCE = str + " is cool!";
+
+        //sentence = str + " is amazing!";
+
+        for (let i = 0; i < str.length; i+=2) {
+            console.log(SENTENCE);
+            
+        }
+    }
+
+    // printManyTimes("freecodecamp");
+
+
+
+
+
+    // Mutate an Array Declared with const 
+    const s = [5, 7, 5];
+    function editInPlace() {
+        "use strict";
+
+        //s = [2, 5, 7];
+        s[0] = 2;
+        s[1] = 5;
+        s[2] = 7;
+
+        return s;
+    }
+
+    // console.log(editInPlace());
+
+
+
+
+    // Prevent Object Mutation
+    function freezeObj() {
+        "use strict";
+        const MATH_CONSTANTES = {
+            PI: 3.14
+        };
+
+        Object.freeze(MATH_CONSTANTES);
+
+        try {
+            MATH_CONSTANTES.PI = 99;
+        } catch( ex ) {
+            console.log(ex);
+        }
+        return MATH_CONSTANTES
+    }
+
+    // const PI = freezeObj();
+
+    // console.log(PI);
+
+
+
+
+    // Use Arrow Functions to write Concise Anonymous Functions
+    const magic = () => new Date();
+
+
+
+    // Write Arrow function with parameters
+    const myConcat = (arr1, arr2) =>  arr1.concat(arr2);
+
+    // console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+
+
+    // Write Higher Order Arrow Functions
+    const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+    const squareList = (arr) => {
+        const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x);
+        return squaredIntegers;
+    };
+
+    // const squaredIntegers = squareList(realNumberArray);
+    // console.log(squaredIntegers);
+
+
+
+
+    // Write Higher Order Arrow Functions
+    const increment = (function() {
+        return function increment(number, value = 1) {
+            return number + value;
+        };
+    })();
+    // console.log(increment(5, 2));
+    // console.log(increment(5));
+
+
+
+
+    // Use the Rest Operator with Function Parameters
+    const sum = (function() {
+        return function sum(...args) { // O rest converte parametros em arrays
+
+            return args.reduce((a, b) => a + b, 0);
+        };
+    })();
+    // console.log(sum(1, 2, 3, 5));
+
+
+
+
+    // Use the spread operator to evaluate Arrays In-Place
+    const arrr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+
+    let arrr2;
+    (function() {
+        arrr2 = [...arrr1]; // Quando usamos o spreed a variavel q atribuimos o valor da variavel existente ou array, passa a ser uma copia do que ja existe e voce pode alterar a variavel posteriomente e o valor copiado nao será alterado
+        arrr1[0] = 'potato';
+    })();
+    // console.log(arrr2);
+
+
+
+
+    // Use Destructuring assignment to assign variables from objects
+    var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+    var x = voxel.x; // x = 3.6
+    var y = voxel.y; // y = 7.4
+    var z = voxel.z; // z = 6.54
+
+    const { x : a, y : b, z : c } = voxel; // a = 3.6, b = 7.4, c = 6.54
+
+
+    const AVG_TEMPERATURES = {
+        today: 77.5,
+        tomorrow: 79
+    };
+
+    function getTempOfTmrw(avgTemperatures) {
+        "use strict";
+        // change code below this line
+        const { tomorrow : getOfTomorrow } = avgTemperatures; // change this line
+        // change code above this line
+        return getOfTomorrow;
+    }
+
+    // console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
+
+
+
+
+    // Destructuring Assignment with Nested Objects
 
 
 
