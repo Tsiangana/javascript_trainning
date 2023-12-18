@@ -39,3 +39,31 @@
 
 
     // Write Concise Object Literal Declarations Using Simple Fields
+    /*const createPerson = (namee, agee, genderr) => {
+
+        return {
+            namee: namee,
+            agee: agee,
+            genderr: genderr
+        };
+
+    };*/ // Another way to do this with JS ES6: look dawn
+
+    /*-->*/ const createPerson = (namee, agee, genderr) => ({ namee, agee, genderr});
+
+    // console.log(createPerson("Eliseu Zau", "20", "male"));
+
+
+
+
+    // Write Concise Declarative Functions
+    const bicycle = {
+        gear: 2,
+        setGear(newGear) {
+            "use strict";
+            this.gear = newGear;
+        }
+    };
+
+    bicycle.setGear(3);
+    console.log(bicycle.gear);
