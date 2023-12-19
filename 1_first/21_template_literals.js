@@ -66,4 +66,62 @@
     };
 
     bicycle.setGear(3);
-    console.log(bicycle.gear);
+    // console.log(bicycle.gear);
+
+
+
+
+    // Use class Syntax to Define a Constructor Function
+    class SpaceShuttle {
+        constructor(targetPlanet){
+        this.targetPlanet = targetPlanet;
+      }
+    }
+
+    var zeus = new SpaceShuttle('Jupiter');
+
+    // console.log(zeus.targetPlanet);
+
+
+
+
+    // Use getters and setters to Control Access to an Object
+    class Book {
+        constructor(author) {
+            this._author = author;
+        }
+        // getter
+        get writer(){
+            return this._author;
+        }
+        // setter
+        set writer(updatedAuthor){
+            this._author = updatedAuthor;
+        }
+    }
+
+    // Example in pratice
+
+    function makedClass() {
+        class Thermostat {
+            constructor(temp){
+                this._temp = 5/9 * (temp - 32);
+            }
+            get temperature(){
+                return this._temp;
+            }
+            set temperature(updatedTemp){
+                this._temp = updatedTemp;
+            }
+        }
+
+        return Thermostat;
+    }
+
+    const Thermostat = makedClass();
+    const thermos = new Thermostat(76);
+    let temp = thermos.temperature;
+    thermos.temperature = 26;
+    temp = thermos.temperature;
+    // console.log(temp);
+
