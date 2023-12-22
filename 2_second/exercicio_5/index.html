@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de caracteres</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="text">
+        <button id="button">contar caracteres</button>
+        <p id="exit"></p>
+    </form>
+
+    <script>
+        let text = document.getElementById('text');
+        let exit = document.getElementById('exit');
+
+        document.getElementById('button').addEventListener('click', (e, valor=0)=>{
+            e.preventDefault();
+            valor = text.value.length;
+            exit.innerHTML = valor;
+        })
+    </script>
+    
+</body>
+</html>

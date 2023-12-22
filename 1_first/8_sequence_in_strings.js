@@ -49,7 +49,7 @@
     var myFirstName = 'Ada';
 
     myFirstNameLength = myFirstName.length;
-    //console.log(myFirstNameLength);
+    console.log(myFirstNameLength);
 
 
     // Bracket Notation to find first character in String

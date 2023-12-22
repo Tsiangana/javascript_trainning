@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Nome</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="text">
+        <button id="botton">mostrar nome</button>
+        <p id="exit"></p>
+    </form>
+    
+    
+
+    <script>
+        let text = document.getElementById('text');
+        let button = document.getElementById('botton');
+        let exit = document.getElementById('exit');
+
+        button.addEventListener('click', (e) =>{
+            e.preventDefault();
+            exit.innerHTML = text.value; 
+        })
+              
+    </script>
+    
+</body>
+</html>
