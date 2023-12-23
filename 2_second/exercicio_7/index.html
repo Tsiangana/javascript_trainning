@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing image with mouseOver</title>
+</head>
+<body>
+    
+    <div style="width: 100%;height: 100vh; display: flex;align-items: center;justify-content: center;">
+        <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="" id="img" style="cursor: pointer;z-index: 10;">
+    </div>
+
+
+    <script>
+        let img = document.getElementById('img');
+
+        img.addEventListener('mouseover', ()=>{
+            newImg = img.src;
+            
+            if (newImg == 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true') {
+                img.src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+            }else if (newImg == 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true') {
+                img.src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true";
+            }else{
+                alert("No image found");
+            }
+        })
+
+        
+    </script>
+</body>
+</html>

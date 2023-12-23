@@ -1,0 +1,2 @@
+(9) Preencha um CPF com pontuação <input maxlength="14" id="cpfPoint" /> 
+e no campo ao lado exiba sem pontuação

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir pontuaçao de algo digitado</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="Number" placeholder="Digite o seu Tell" maxlength="9">
+        <p id="show"></p>
+        <button id="convert">Mostrar</button>
+    </form>
+
+    <script>
+        let number = document.getElementById('Number');
+        let show = document.getElementById('show');
+
+        document.getElementById('convert').addEventListener('click', (e)=>{
+            e.preventDefault();
+            let arr = '';
+            let arr_one = number.value;
+
+            arr = arr_one[0] + arr_one[1] + arr_one[2] + " - " + arr_one[3] + arr_one[4] + arr_one[5] + " - " + arr_one[6] + arr_one[7] + arr_one[8];
+            
+            show.innerHTML = arr;
+        })
+    </script>
+</body>
+</html>

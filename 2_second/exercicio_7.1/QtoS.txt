@@ -1,0 +1,2 @@
+(7a) Faça 2 campos no HTML chamados: 'Nome', 'Sobrenome' e um botão 'Saudação'; 
+ao clicar no botão exibir um alert: 'Olá {NOME} {SOBRENOME}'

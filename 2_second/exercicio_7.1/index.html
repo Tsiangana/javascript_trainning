@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir dados</title>
+</head>
+<body>
+
+    <form action="#">
+        <input type="text" id="name" placeholder="Name"><br>
+        <input type="text" id="sub-name" placeholder="Sobrenome"><br>
+        <button id="button">Enviar</button>
+    </form>
+    
+    <script>
+        let name = document.getElementById('name');
+        let sub_name = document.getElementById('sub-name');
+
+        document.getElementById('button').addEventListener('click', (fullName) =>{
+            fullName = name.value + " " + sub_name.value;
+            alert(fullName);
+        })
+    </script>
+</body>
+</html>
