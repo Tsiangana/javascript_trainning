@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+</head>
+<body>
+
+    <form>
+        <input type="number" name="num1" id="num1" required>
+        <input type="number" name="num2" id="num2" required><br>
+        <p id="p"></p><br>
+        <button id="button">Somar</button>
+    </form>
+
+    <script>
+        let num1 = document.getElementById('num1');
+        let num2 = document.getElementById('num2');
+        let show = document.getElementById('p');
+
+        document.getElementById('button').addEventListener('click', (e)=>{
+            e.preventDefault();
+
+            if (num1.value === "" || num2.value === "") {
+                alert("Precisa preencher todos os campos com numeros")
+            }else{
+                show.innerHTML = Number(num1.value) + Number(num2.value);
+            }
+            
+        })
+        /*o if else foi criado com intuito de ser uma verificaçao, pois se os campos estivessem vasios,
+        o codigo apenas imprimiria o numero de um campo e nao faria a soma, nesse caso afim de resolver
+        esse bug. Criei uma verificaçao em if else, que verifica se os campos estao preenchidos caso nao ele pede para preencher*/
+    </script>
+    
+</body>
+</html>

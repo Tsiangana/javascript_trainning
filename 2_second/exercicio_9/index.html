@@ -8,24 +8,37 @@
 <body>
 
     <form>
-        <input type="text" id="Number" placeholder="Digite o seu Tell" maxlength="9">
+        <input type="text" autocomplete="off" id="Number" placeholder="Digite o seu Tell" maxlength="11">
         <p id="show"></p>
         <button id="convert">Mostrar</button>
     </form>
 
     <script>
-        let number = document.getElementById('Number');
+        let input = document.getElementById('Number');
         let show = document.getElementById('show');
+
+
+
+        input.addEventListener('keypress', ()=>{
+
+            let inputLengh = input.value.length;
+
+            if (inputLengh === 3 || inputLengh === 7) {
+                input.value += '-';
+            }
+            
+        })
 
         document.getElementById('convert').addEventListener('click', (e)=>{
             e.preventDefault();
             let arr = '';
-            let arr_one = number.value;
+            let arr_one = input.value;
 
-            arr = arr_one[0] + arr_one[1] + arr_one[2] + " - " + arr_one[3] + arr_one[4] + arr_one[5] + " - " + arr_one[6] + arr_one[7] + arr_one[8];
+            arr = arr_one[0] + arr_one[1] + arr_one[2] + arr_one[4] + arr_one[5] + arr_one[6] + arr_one[8] + arr_one[9] + arr_one[10];
             
             show.innerHTML = arr;
         })
+
     </script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+12) Faça um comentário de uma linha no JavaScript no exercicio anterior
