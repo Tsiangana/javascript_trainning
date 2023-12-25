@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencher div 20x</title>
+</head>
+<body>
+
+    <div id="el" style="text-align: center; background-color: red; width: 150px;height: auto;padding:10px;"></div>
+    
+    <script>
+        let div = document.getElementById('el');
+
+        window.onload = () => {
+            div.innerHTML = "<p>Repetiçao</p>";
+            vezes = "";
+            vezes = div.innerHTML;
+
+            for (let i = 0; i < 20; i++) {
+                vezes =+ "<p>Repetiçao</p>";
+            }
+        }
+    </script>
+</body>
+</html>

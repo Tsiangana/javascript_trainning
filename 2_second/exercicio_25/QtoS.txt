@@ -1,0 +1,2 @@
+(25) Dentro da div com o id 'resultado', escreva 20x ('Repetição'). 
+(use o 'for' pelo amor de deus)

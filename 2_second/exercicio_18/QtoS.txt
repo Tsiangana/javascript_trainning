@@ -1,0 +1,1 @@
+(18) Exiba o 'resto' da seguinte divisão: (5 / 2)

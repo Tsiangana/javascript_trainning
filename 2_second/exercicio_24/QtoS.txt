@@ -1,0 +1,1 @@
+(24) Dentro da div com o id 'resultado', escreva 2x ('Repetição').
