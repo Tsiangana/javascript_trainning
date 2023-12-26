@@ -1,0 +1,9 @@
+(31) Ok... chega de for(), mentira / #SQN... Exiba a tabuada do 1 até o 10 
+(for dentro de for?) (caso você escreva de forma manual.. eu vou te bater HSUAHASHUAS)
+
+0 x 0 = 0
+0 x 1 = 0
+0 x 2 = 0
+...
+10 x 9 = 90
+10 x 10 = 100

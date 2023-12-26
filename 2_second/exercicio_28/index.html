@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preencher div 20x</title>
+    <title>Preencher div 5x com Do while</title>
 </head>
 <body>
 
@@ -16,9 +16,12 @@
             //div.innerHTML = "<p>Repetiçao</p>";
             let repeticao = "<p>Repeticao</p>"; 
 
-            for (let i = 0; i < 20; i++) {
+            let i = 0;
+
+            do {
                 div.innerHTML += repeticao;
-            }
+                i++
+            } while (i < 5);
         }
     </script>
 </body>

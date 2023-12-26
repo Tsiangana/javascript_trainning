@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preencher div 20x</title>
+    <title>Imprimir numeros pares de 1 a 20</title>
 </head>
 <body>
 
@@ -13,11 +13,12 @@
         let div = document.getElementById('el');
 
         window.onload = () => {
-            //div.innerHTML = "<p>Repetiçao</p>";
-            let repeticao = "<p>Repeticao</p>"; 
 
-            for (let i = 0; i < 20; i++) {
-                div.innerHTML += repeticao;
+            for (let i = 1; i <= 20; i++) {
+                let valor = i;
+                if (valor % 2 == 0) {
+                    div.innerHTML += "<p>"+ valor +"</p>";
+                }
             }
         }
     </script>

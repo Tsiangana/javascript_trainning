@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preencher div 20x</title>
+    <title>Exibir tabuada de 1 á 10</title>
 </head>
 <body>
 
@@ -13,11 +13,13 @@
         let div = document.getElementById('el');
 
         window.onload = () => {
-            //div.innerHTML = "<p>Repetiçao</p>";
-            let repeticao = "<p>Repeticao</p>"; 
-
-            for (let i = 0; i < 20; i++) {
-                div.innerHTML += repeticao;
+            //div.innerHTML += "<p>"+ valor +"</p>";
+            
+            for (let i = 0; i <= 10; i++) {
+                for (let e = 0; e <= 10; e++) {
+                    div.innerHTML += "<p>" + i + "x" + e + "=" + i*e +"</p>";  
+                }
+                
             }
         }
     </script>

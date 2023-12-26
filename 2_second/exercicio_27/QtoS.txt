@@ -1,0 +1,1 @@
+(27) Dentro da div com o id 'resultado', escreva 5x ('Repetição'). (agora com while)

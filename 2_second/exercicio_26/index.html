@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preencher div 20x</title>
+    <title>Preencher div 5x</title>
 </head>
 <body>
 
@@ -16,9 +16,11 @@
             //div.innerHTML = "<p>Repetiçao</p>";
             let repeticao = "<p>Repeticao</p>"; 
 
-            for (let i = 0; i < 20; i++) {
+            let array = [1,2,3,4,5]
+
+            array.forEach(element => {
                 div.innerHTML += repeticao;
-            }
+            });
         }
     </script>
 </body>
