@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            display: none;
+        }
+         input, button{
+            display: inline-block;
+         }
+    </style>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <input type="text" id="text"><br>
+    <button id="button">Comparar</button>
+    
+
+    <script>
+        let result = document.getElementById('result');
+        let text = document.getElementById('text');
+
+        window.onload = () => {
+            alert("Adevinhe o valor dentro de um intervalo de 1 à 5");
+        }
+
+        document.getElementById('button').addEventListener('click', ()=>{
+            text.style.display = "none";
+            document.getElementById('button').style.display = "none";
+            result.style.display = "inline";
+
+            let aleatorio = Math.floor(Math.random() * 5);
+
+            if (text.value == aleatorio) {
+                result.innerHTML = aleatorio +" é o número correcto, PARABÉNS :)";
+            }else {
+                result.innerHTML = "Voce falhou o numero: " + text.value + " nao é o correcto, o correcto é o: " + aleatorio;
+            }
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+(35) Exiba a data atual pelo JavaScript no seguinte formato: dia/mês/Ano

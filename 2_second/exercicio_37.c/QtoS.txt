@@ -1,0 +1,6 @@
+
+    (37.c) Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+    E exiba um a um com alert() - De preferencia para funções com callbacks, 
+    Ex:(map, reduce, filter)
+
+map, reduce, filter

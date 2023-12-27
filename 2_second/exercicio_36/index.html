@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show date</title>
+</head>
+<body>
+
+    <h1 id="show"></h1>
+
+    <script>
+        window.onload = (e) => {
+            e = new Date(2024,+1);
+            document.getElementById('show').innerHTML = e;
+        }    
+    </script>
+    
+</body>
+</html>

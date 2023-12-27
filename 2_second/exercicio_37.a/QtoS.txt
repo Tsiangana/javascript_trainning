@@ -1,0 +1,6 @@
+Just.... DO IT ARRAYS:
+
+Entenda sobre arrays: https://pt.wikipedia.org/wiki/Arranjo_(computa%C3%A7%C3%A3o) ou https://en.wikipedia.org/wiki/Array_data_type
+
+    (37.a) Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+    E Exiba a quantidade/comprimento que ele tem com a função .length
