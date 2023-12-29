@@ -1,0 +1,4 @@
+(38) Crie o seguinte array: 
+var deuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr']
+
+E exiba todos os nomes, dentro do html: <ul id="nomes"></ul>

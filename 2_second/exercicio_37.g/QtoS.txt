@@ -1,0 +1,4 @@
+(37.g) Crie o seguinte array: var numbers = [5, 7, 1, 8, 9]
+
+E exiba de forma crescente @dica: .sort
+@dica2: http://pt.stackoverflow.com/questions/9900/como-ordenar-um-array-por-valores

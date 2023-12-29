@@ -10,9 +10,28 @@
 
     <script>
         window.onload = () => {
-            ["Eliseu", "Pedro", "zau"].map(function (item) {
-                alert(item);
+            // Map
+            ["Eliseu", "Pedro", "zau"].map(function (cook) {
+                alert(cook);
             })
+
+
+            // Filter
+            /*let Filter = ["frango-carne", "agua-bebida", "gasosa-bebida", "cerveja-bebida", "beicao-carne"];
+            const array = Filter.filter( isVegetarian => {
+                return isVegetarian.includes("bebida");
+            })
+            alert(array);*/
+
+
+            // Reduce 
+            /*const eat = ["frango-carne", "agua-bebida", "gasosa-bebida", "cerveja-bebida", "beicao-carne"].reduce(function (result, item) {
+                return result + item.length;
+            }, 1);
+            alert(eat);*/
+
+
+            // OBS: Se prettende usar uma das funcoes tens de comentar a outra, apenas uma pode ficar descomentada 
         }
     </script>
 </body>

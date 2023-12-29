@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir valores de um Array em uma ul</title>
+</head>
+<body>
+
+    <ul id="nomes"></ul>
+    
+
+    <script>
+        let nomes = document.getElementById("nomes");
+
+        var pessoas = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr'];
+
+        pessoas.map(function (elements) {
+            nomes.innerHTML += "<li>" + elements + "</li>";
+        })
+
+        /*for (let i = 0; i < pessoas.length; i++) {
+            nomes.innerHTML += "<li>" + pessoas[i] + "</li>";
+        }*/
+
+
+        /* Nesse caso optei por demostrar q da para fazer tanto com a propriedade ma
+        ou usar um for loop, os dois funcionam sem nenhum problema. Apenas para testar minhas habilidades;*/
+
+
+    </script>
+</body>
+</html>

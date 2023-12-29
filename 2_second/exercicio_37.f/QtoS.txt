@@ -1,0 +1,3 @@
+(37.f) Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+
+Adicione os 3 Deuses: ('Loki', 'Odin', 'Frey') com a função .length
