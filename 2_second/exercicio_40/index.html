@@ -25,10 +25,10 @@
 
             for (let i = 0; i < array.length; i++) {
                 
-                if (valor % 2 == 0) {
-                    return "par";
-                }else{
-                    return "ímpar";
+                if (array[i] % 2 == 0) {
+                    show.innerHTML += "<h1>" + array.pop() + " é um número par" + "</h1>"; 
+                }else {
+                    alert("Número impar tenta outro"); 
                 }
                 
             }
