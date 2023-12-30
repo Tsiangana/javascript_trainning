@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenar valores dentro de um array</title>
+</head>
+<body>
+
+    <input type="text" id="text"><br>
+    <button id="button">Guardar</button><p></p><p></p>
+
+    <div id="show"></div>
+
+
+    <script>
+        let text = document.getElementById("text");
+        let button = document.getElementById("button");
+        let show = document.getElementById("show");
+        let array = [];
+
+        button.addEventListener('click', ()=>{
+            array.push(text.value);
+
+            array.map(function (elements) {
+                show.innerHTML += "<h1>" + array.pop() + "</h1>"; // Desse jeito ele vai imprimindo apenas o último elemento do array
+                // show.innerHTML += "<h1>" + elements + "</h1>"; // Nesse caso ele vai imprimir todos elementos dentro do array de uma vez só
+            })
+        })
+    </script>
+    
+</body>
+</html>
