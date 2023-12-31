@@ -1,0 +1,34 @@
+
+(42)
+
+Challenge Accepted Meme
+
+Com as imagens abaixo: Animação Urso
+
+Crie uma animação, onde a imagem se troca entre 1,2 e 3, e mova o bloco para a direita, dando entender que o urso está 'andando'. Urso Animado
+
+@Dica: Já deixei cortado cada uma com ( 32px x 32px )
+
+  https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png
+  https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-2.png
+  https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-3.png
+
+Basicamente você pode usar os exemplos abaixo:
+Exemplo de temporizador/setTimeout()
+Alterar-Style de uma div
+Alterar-Src de Img
+
+E obviamente um toque de de CSS para mover a img: Leitura recomendada: https://www.w3schools.com/css/css_positioning.asp
+
+Caso ficou curioso de como fazer, tem um exemplo aqui:
+
+Onde separei em 3 partes:
+
+1-animacao (Onde ocorre a troca de forma dinamica entre a img-chara: 1,2,3)
+2-mover-img (Empurro uma imagem estatica de forma dinamica da esquerda (left) até o final)
+3-urso-animado (Junção de ambos exemplos, dando a impressão do urso 'andar')
+
+Veja o código completo aqui:
+https://github.com/gabrieldarezzo/gabrieldarezzo.github.io/tree/master/helpjs-ravi/desafio-urso
+
+Demo Online do urso animado aqui: ( Não vale copiar em?! ) http://gabrieldarezzo.github.io/helpjs-ravi/desafio-urso/3-urso-animado/

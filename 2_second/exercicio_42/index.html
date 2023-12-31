@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaçao boneco meme - Urso</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        img{
+            position: absolute;
+            right: 0;
+            top: 300px;
+            animation: animations 3.5s linear infinite;
+            width: 50px;
+        }
+        @keyframes animations {
+            from{
+                left: -90px;
+            }
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <img id="img" src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png" alt="urso-animado">
+    </div>
+
+    <script>
+        let img = document.getElementById("img");
+
+        window.onload = () => {
+            let animation  = () => {
+
+                setTimeout(() => {
+                img.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png";
+                }, 0);
+                setTimeout(() => {
+                    img.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-2.png";
+                }, 150);
+                setTimeout(() => {
+                    img.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-3.png";
+                }, 200);
+
+            }
+            setInterval(animation, 350);
+            animation();
+        }
+    </script>
+    
+</body>
+</html>
