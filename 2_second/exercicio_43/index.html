@@ -32,17 +32,17 @@
 
             for (let i = 0; i < myArray.length; i++) {
                 show.innerHTML += "<p>"+ i + " - " + myArray[i] + "</p>"; 
-                 
             }
         });
 
         document.getElementById("deletar").addEventListener('click', () => {
-            let deletar = deleta.value;
+            //let deletarONe = "";
+            let deletarONe = deleta.value;
             //Number(deletar);
             for (let i = 0; i < myArray.length; i++) {
-                if (myArray[i] == deleta) {
+                if (myArray[i] === deletarONe) {
                     // myArray[i].shift();
-                    alert(myArray[i])
+                    alert("eliseu");
                 }
                 
             }
