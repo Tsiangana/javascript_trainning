@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus - CRUD System with Arrahy except edit</title>
+</head>
+<body id="neew">
+
+    <input type="text" id="add"><button id="add_button">Enviar</button>
+    <input type="text" id="delete"><button id="deletar">Deletar</button><br>
+    <p><button id="show_me">Mostrar Lista</button></p>
+    <h1 id="show"></h1>
+    </div>
+
+
+    <script>
+        let add = document.getElementById("add");
+        let deleta = document.getElementById("delete");
+        let show = document.getElementById("show");
+
+        let myArray = [];
+
+        document.getElementById("add_button").addEventListener('click', () => {
+            let adicionar = "";
+            adicionar = add.value;
+            myArray.push(adicionar);
+        });
+
+        document.getElementById("show_me").addEventListener('click', () => {
+            // show.innerHTML = "<p>"+ myArray[i] + "</p>"; 
+
+            for (let i = 0; i < myArray.length; i++) {
+                show.innerHTML += "<p>"+ i + " - " + myArray[i] + "</p>"; 
+                 
+            }
+        });
+
+        document.getElementById("deletar").addEventListener('click', () => {
+            let deletar = deleta.value;
+            //Number(deletar);
+            for (let i = 0; i < myArray.length; i++) {
+                if (myArray[i] == deleta) {
+                    // myArray[i].shift();
+                    alert(myArray[i])
+                }
+                
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+BONUS -
+
+Crie um campo texto no html que armazena o conteúdo em um array sempre que você 
+clicar no botão, e apresente em uma lista(ul) possibilitando excluir individualmente 
+o item/li clicado
+
+JavaScript curiosidade...
+http://pt.stackoverflow.com/questions/8035/qual-a-diferen%C3%A7a-entre-declarar-uma-matriz-com-array-e-em-javascript
