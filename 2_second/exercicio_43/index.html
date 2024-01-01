@@ -8,7 +8,7 @@
 <body id="neew">
 
     <input type="text" id="add"><button id="add_button">Enviar</button>
-    <input type="text" id="delete"><button id="deletar">Deletar</button><br>
+    <input type="text" id="delete" placeholder="only number" onclick="alert('insere o numero da posicao do valor que pretendes remover')"><button id="deletar">Deletar</button><br>
     <p><button id="show_me">Mostrar Lista</button></p>
     <h1 id="show"></h1>
     </div>
@@ -36,16 +36,10 @@
         });
 
         document.getElementById("deletar").addEventListener('click', () => {
-            //let deletarONe = "";
             let deletarONe = deleta.value;
-            //Number(deletar);
-            for (let i = 0; i < myArray.length; i++) {
-                if (myArray[i] === deletarONe) {
-                    // myArray[i].shift();
-                    alert("eliseu");
-                }
-                
-            }
+            Number(deletarONe);
+            myArray.splice(deletarONe, deletarONe);
+            alert("removido com sucesso");
         });
     </script>
 
