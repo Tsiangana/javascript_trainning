@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <script>
+        const arr = [1, true, "str", {}, function() {}];
+
+        const iterador = item =>
+            typeof item === "function" ? "era uma funcao" : item
+        
+        const arr2 = arr.map(iterador);
+        console.log(arr2);
+
+        //const soma = (n1, n2, n3) => n1 + n2 + n3
+        const soma = (...nums) => console.log(nums);
+
+        console.log(soma(10, 10, 10));
+    </script>
+</body>
+</html>

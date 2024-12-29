@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout, setInterval</title>
+</head>
+<body>
+    <script>
+        // callbaks
+        // assincrono
+
+        console.log("Inicio");
+        
+        const timeout =setTimeout(() => console.log("Depois de 2s") , 2000);
+        const interval = setInterval(() => console.log("Depois de 2s"), 2000);
+
+        clearTimeout(timeout);
+        clearInterval(timeout);
+        console.log("Fim");
+        
+    </script>
+</body>
+</html>

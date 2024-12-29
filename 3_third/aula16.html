@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+        console.log("Inicio");
+
+        const promise = new Promise((resolve, reject) => {
+            console.log("entou aqui");
+            resolve("funcionou")
+            //reject("deu erro")
+        });
+        promise
+            .then(str => console.log("OK:", str))
+            .catch(error => console.log("ERROR:", error))
+        console.log("Fim");
+    </script>
+</body>
+</html>

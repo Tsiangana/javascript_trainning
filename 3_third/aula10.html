@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        const obj = Object.create(Object.prototype, {
+            foo: { value: "bar"},
+            bar: { value: "baz"},
+        })
+
+        const objLiteral = {
+            foo: "bar",
+            bar: "baz"
+        }
+
+        //Object destruct, basicamente é desfragmentacao de um objecto
+        //Em partes afim  de voltar a usar suas variaveis de dentro do object
+        const { foo, bar } = objLiteral
+
+        //deletar elementos de um objecto
+        // delete obj.foo ou obj.foo = undefined
+
+        // Exercicios
+        const objeto = {
+            front: "React",
+            back: "NodeJS",
+            lang: "JS"
+        }
+
+        const {front, back, ...rest} = objeto;
+
+        const objNovo = {rest};
+        objNovo.rest.lang = "Javascript";
+        console.log(objeto);
+        console.log(front);
+        console.log(back);
+        console.log(objNovo);
+    </script>
+</body>
+</html>

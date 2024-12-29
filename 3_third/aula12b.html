@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Reduce</title>
+</head>
+<body>
+    <script>
+        const arr = [1, 4, 5, 7, 9];
+
+        const result = arr.reduce(function(memo, current, index) {
+            console.log("index", index);
+            return memo + current;
+        }, 0)
+
+        console.log(result  );
+    </script>
+</body>
+</html>

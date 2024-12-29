@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        const arr1 = Array(1, true, "str", {}, function() {});
+        const arr = [1, true, "str", {}, function() {}];
+
+        // arr.forEach(function(item) {
+        //    console.log("item:", item);
+        // })
+
+        // o map ele percorre o arraty e substitui
+        // cada elemento do array pelo que a funcao retorna
+        const arr2 = arr.map(function(item) {
+            return (2);
+        })
+
+        // ele percorre um array e retira o elemento
+        // sempre que ele retornar algo como falso
+        const arr3 = arr.filter(function(item) {
+            return (true);
+        });
+
+        arr.push("nova string");
+        console.log(arr);
+        // o pop remove o ultimo elemento
+        arr.pop();
+        console.log(arr);
+        // o Shift remove o primeiro elemento
+        arr.shift();
+    </script>
+</body>
+</html>

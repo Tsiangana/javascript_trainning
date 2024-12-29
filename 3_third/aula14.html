@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+        class Calc {
+            constructor() {
+                this.history = []
+                console.log(this)
+            }
+            soma(n1, n2) {
+                const result = n1 + n2;
+                this.history.push(result)
+                return result;
+            }
+        }
+
+        class calcCientifica extends Calc{
+            constructor() {
+                super()
+            }
+
+            sub (n1, n2) {
+                const result = n1 - n2;
+                this.history.push(result)
+                return result;
+            }
+        }
+
+        const calc = new calcCientifica();
+        console.log(calc.soma(2, 5));
+        console.log(calc.sub(2, 3));
+        console.log(calc.soma(2, 8));
+
+        // Em resumo uma classe te permite 
+        // Ter varias funcoes funcionando
+        // onde vc apenas chamas a classe e tens acesso a toadas as funcoens
+        // podes interligar as classes e chamar uma dentro da outra
+        
+    </script>
+</body>
+</html>
