@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso - Todo List</title>
+    <style>
+        body {
+            background: #EDF0F2;
+            padding: 0;
+            margin: 0;
+        }
+        #app {
+            padding: 25px;
+        }
+        input {
+            width: 250px;
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #CCC;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            color: #333;
+        }
+        #form button {
+            background: #43DC70;
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 3px;color: #fff;
+            border: 0;
+        }
+        #tasks button {
+            font-size: 16px;
+            border: 0;
+            background: transparent;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <section id="form">
+            <h1>Adicionar Tarefa</h1>
+            <input type="text" name="task" id="task" placeholder="Descreva a tarefa">
+            <button>Adicionar</button>
+        </section>
+        
+        <section id="tasks">
+            <h2>Tarefas</h2>
+            <ul></ul>
+        </section>
+    </div>
+
+    <script>
+        const ulElement = document.querySelector("#tasks ul")
+        const tasks = []
+
+        function removeTask(index) {
+            tasks.splice(index, 1)
+            const taskElement = document.querySelector(`#tasks li#item-${index}`)
+            ulElement.removeChild(taskElement)
+        }
+
+        function addTask(text) {
+            const total =  tasks.push(text);
+            const index =  total - 1;
+
+            const taskElement = document.createElement("li")
+            const textElement = document.createElement("span")
+            const btnElement = document.createElement("button")
+            
+            taskElement.setAttribute("id", `item-${index}`)
+
+            btnElement.onclick = () => removeTask(index)
+
+            taskElement.appendChild(textElement)
+            taskElement.appendChild(btnElement)
+
+            textElement.innerHTML = text
+            btnElement.innerHTML = "Remover"
+
+            ulElement.appendChild(taskElement)
+        }
+
+        const btnElement = document.querySelector("#form button")
+        const inputElement = document.querySelector("#form input")
+
+        btnElement.onclick = () => {
+            if (inputElement.value) {
+                addTask(inputElement.value)
+                inputElement.value = ""
+                console.log(tasks)
+            }
+        }
+    </script>
+</body>
+</html>

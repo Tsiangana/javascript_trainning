@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get DOM Element - Eventos</title>
+    <style>
+        .input {
+            width: 100px;
+            font-size: 18px;
+        }
+        button {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="number" name="n1" id="n1" class="input">+
+        <input type="number" name="n2" id="n2" class="input">
+        <button>Calcular</button>
+    </div>
+
+    <script>
+        const inputN1 = window.document.getElementsByTagName("input")[0]
+        const inputN2 = window.document.querySelector("div input#n2")
+        const btn = window.document.querySelector("button")
+
+        btn.onclick = () => {
+            const n1 = Number.parseInt(inputN1.value)
+            const n2 = Number.parseInt(inputN2.value)
+
+            console.log(n1 + n2)
+        }
+    </script>
+
+</body>
+</html>
